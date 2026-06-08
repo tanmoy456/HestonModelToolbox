@@ -4,6 +4,8 @@ A quantitative-finance toolbox for pricing and calibrating European options unde
 
 **🔗 Live demo:** [heston-model.streamlit.app](https://heston-model.streamlit.app/)
 
+![App demo](assets/screenshot.png)
+
 
 ## Overview
 
