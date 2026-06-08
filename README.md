@@ -1,6 +1,6 @@
 # Heston Model Toolbox
 
-A quantitative-finance toolbox for pricing European options under the **Heston stochastic volatility model** — implementing four independent pricing methods, and an interactive web app for real-time parameter exploration.
+A quantitative-finance toolbox for pricing and calibrating European options under the **Heston stochastic volatility model** — implementing four independent pricing methods, a full market-data calibration pipeline and an interactive web app for real-time parameter exploration.
 
 **🔗 Live demo:** [heston-model.streamlit.app](https://heston-model.streamlit.app/)
 
