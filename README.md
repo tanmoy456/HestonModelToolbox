@@ -14,7 +14,7 @@ The asset price and its variance evolve as:
 
 $$dS_t = \mu S_t \, dt + \sqrt{v_t}\, S_t \, dW_t^{(1)}$$
 $$dv_t = \kappa(\theta - v_t)\, dt + \sigma \sqrt{v_t}\, dW_t^{(2)}$$
-$$\operatorname{corr}\left(dW_t^{(1)}, dW_t^{(2)}\right) = \rho$$
+$$\text{corr}\left(dW_t^{(1)}, dW_t^{(2)}\right) = \rho$$
 
 
 where $\kappa$ is the mean-reversion speed, $\theta$ the long-run variance, $\sigma$ the vol-of-vol, $\rho$ the correlation, and $v_0$ the initial variance.
