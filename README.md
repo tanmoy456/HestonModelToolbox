@@ -59,6 +59,29 @@ HestonModelToolbox/
 └── requirements.txt
 ```
 
+### Price an option directly
+
+```python
+from heston.P1P2Heston import heston_call_price
+
+price = heston_call_price(
+    S0=100, K=100, r=0.05, tau=1.0,
+    kappa=2.0, theta=0.05, sigma=0.3, rho=-0.5, v0=0.05,
+)
+print(f"Call price: {price:.4f}")
+```
+
+### Calibrate to market data
+
+1. Run `SaveMarketData.ipynb` to fetch a fresh option chain (or use the bundled CSVs in `option_data/`).
+2. Run `PriceCalibration.ipynb` to fit the five Heston parameters by minimizing pricing error (SLSQP optimizer with a Feller-condition constraint, `2κθ > σ²`) and visualize the market-vs-model price surface in 3D.
+
+## Tech stack
+
+`Python` · `NumPy` · `SciPy` · `pandas` · `QuantLib` · `Plotly` · `Streamlit` · `yfinance` · `nelson-siegel-svensson`
+
+
+
 ## References
 
 - Heston, S. L. (1993). *A Closed-Form Solution for Options with Stochastic Volatility with Applications to Bond and Currency Options.* [PDF](https://www.ma.imperial.ac.uk/~ajacquie/IC_Num_Methods/IC_Num_Methods_Docs/Literature/Heston.pdf)
